@@ -283,7 +283,7 @@ ul{
     color: whitesmoke;
     background-image: url(img/men/men-cover.jpg);
     background-size: cover;
-    padding: 20px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,7 +325,7 @@ ul{
     color: whitesmoke;
     background-image: url(img/women/women-cover.jpg);
     background-size: cover;
-    padding: 20px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,9 +397,8 @@ ul{
 .page-header-blog{
     color: whitesmoke;
     background-image: url(img/blog/blog-cover.png);
-    height: 30vh;
     background-size: cover;
-    padding: 0 20px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -407,8 +406,6 @@ ul{
     background-repeat: no-repeat;
     margin-top: 90px;
 }
-
-/* blog.html */
 .card-container{
     display: grid;
     gap: 1.5 rem;
@@ -734,6 +731,9 @@ ul{
     .productDetail{
         padding: 50px 20px;
     }
+    .page-header-men, .page-header-women, .page-header-blog{
+        padding: 40px;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -781,6 +781,9 @@ ul{
         width: 150px;
         text-align: center;
     }
+    .page-header-men, .page-header-women, .page-header-blog{
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 560px){
@@ -822,8 +825,11 @@ ul{
     .hero img{
         width: 70%;
     }
-    .hero, .page-header-men, .page-header-women{
+    .hero, .page-header-men, .page-header-women, .page-header-blog{
         margin-top: 70px;
+    }
+    .page-header-men, .page-header-women, .page-header-blog{
+        padding: 20px;
     }
     .logo{
         font-size: 2rem;
