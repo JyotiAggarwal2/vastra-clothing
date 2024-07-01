@@ -364,6 +364,9 @@ ul{
     flex-direction: column;
     gap: 5px;
 }
+.productDetail .productDesc p{
+    font-weight: normal;
+}
 
 .productDetail .productDesc select,input,button{
     width: fit-content;
