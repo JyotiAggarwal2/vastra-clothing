@@ -94,9 +94,9 @@ body{
 .hero{
     background-image: url("./img/misc/cover1.jpg");
     height: 90vh;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: top 15% right 10;
-    padding: 0 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -107,6 +107,7 @@ body{
 
 .hero h1,h2,h4,p{
     margin: 5px 0;
+    font-weight: bolder;
 }
 .hero img{
     width: 30%;
@@ -187,7 +188,6 @@ body{
 
 .banner img{
     width: 100%;
-    height: 45vh;
 }
 
 .partition{
@@ -282,9 +282,8 @@ ul{
 .page-header-men{
     color: whitesmoke;
     background-image: url(img/men/men-cover.jpg);
-    height: 30vh;
     background-size: cover;
-    padding: 0 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,9 +324,8 @@ ul{
 .page-header-women{
     color: whitesmoke;
     background-image: url(img/women/women-cover.jpg);
-    height: 30vh;
     background-size: cover;
-    padding: 0 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -725,13 +723,9 @@ ul{
     }
     .nav .close{
         display: block;
-    }
+    }    
     .hero{
-        background-position: top 10% right 100%;
-        margin-top: 70px;
-    }
-    .banner img{
-        height: 25vh;
+        padding: 20px;
     }
     .home-p1 .featured-card{
         width: 25%;
@@ -749,10 +743,7 @@ ul{
     .footer-left{
         width: 100%;
         text-align: center;
-    }    
-    .page-header-men, .page-header-women{
-        height: 25vh;
-    }
+    }        
     #cart-add{
         display: flex;
         flex-direction: column;
@@ -813,33 +804,25 @@ ul{
         gap: 5px;
         padding: 10px 0;
     }
-    .banner img{
-        height: 20vh;
-    }
     .hero img{
         width: 50%;
     }
-}
-
-@media screen and (max-width: 400px){    
-    
     .hero{
         padding: 10px;
     }
     .hero h1,h2,h4,p{
         margin: 2px 0;
     }
-    .banner img{
-        height: 15vh;
-    }
+}
+
+@media screen and (max-width: 400px){   
     .home-p1 .featured-card{
         width: 100%;
     }
     .hero img{
         width: 70%;
     }
-    .page-header-men, .page-header-women{
-        height: 20vh;
+    .hero, .page-header-men, .page-header-women{
         margin-top: 70px;
     }
     .logo{
