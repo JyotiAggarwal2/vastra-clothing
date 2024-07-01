@@ -105,7 +105,7 @@ body{
     margin-top: 90px;
 }
 
-.hero h1,h2,h4,p{
+.hero h1,h2,h4,h5{
     margin: 5px 0;
     font-weight: bolder;
 }
@@ -364,9 +364,6 @@ ul{
     flex-direction: column;
     gap: 5px;
 }
-.productDetail .productDesc p{
-    font-weight: normal;
-}
 
 .productDetail .productDesc select,input,button{
     width: fit-content;
@@ -387,6 +384,9 @@ ul{
 }
 .productDetail .productDesc span{
     text-align: justify;
+}
+.productDetail .productDesc li{
+    margin-bottom: 2px;
 }
 
 .nav-icons .hamburger{
