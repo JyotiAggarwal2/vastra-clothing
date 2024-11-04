@@ -2,6 +2,18 @@
 
 ![Vastra - Clothing](./img/misc/index.png)
 
+## Table of Contents
+- [Live Demo](#live-demo)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
+
 ## Live Demo
 
 Check out the live website [here](https://jyotiaggarwal2.github.io/vastra-clothing/).
@@ -14,9 +26,13 @@ Vastra is more than just an online store; it's a complete shopping experience th
 
 ## Features
 
-- **Browse Products:** Access a diverse collection of men's and women's clothing, featuring various styles and trends.
-- **Responsive Design:** Optimized for different devices and screen sizes, enjoy a consistent and optimal viewing experience across all devices, including desktops, tablets, and mobile phones.
-- **User-Friendly Interface:** Easy navigation and smooth user experience with an intuitive layout and design.
+- **Dynamic Product Listings**: Showcases a variety of men's and women's clothing items, allowing users to explore new arrivals and featured products.
+
+- **Intuitive Cart Management**: Allows users to add, remove, or update item quantities in the shopping cart, with a clear summary of the total cost and items.
+
+- **Detailed Product Pages**: Provides detailed information for each product, including images, price, description, brand, category, available sizes, and customer reviews.
+
+- **Blog and Fashion Tips Section**: Offers a dedicated section for fashion articles, style guides, and tips, enhancing user engagement and positioning the brand as a fashion authority.
 
 ## Screenshots
 
@@ -44,7 +60,7 @@ Vastra is more than just an online store; it's a complete shopping experience th
 - **CSS**
 - **JavaScript**
 
-## Getting Started
+## Setup
 
 Follow these instructions to set up the project on your local machine.
 
@@ -56,21 +72,34 @@ Follow these instructions to set up the project on your local machine.
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/clothing-ecommerce-website.git
+    git clone https://github.com/JyotiAggarwal2/vastra-clothing.git
     ```
 
 2. Navigate to the project directory:
     ```sh
-    cd clothing-ecommerce-website
+    cd vastra-clothing
     ```
 
 3. Open `index.html` in your web browser to view the website.
 
 ## Usage
 
-- Navigate through different categories of clothing.
-- Add items to your cart and proceed to checkout.
-- Use the search bar to quickly find specific products.
+- **Effortless Shopping Experience**: Browse and shop from a wide variety of men’s and women’s fashion items with a streamlined, user-friendly interface.
+
+- **Explore Latest Trends**: Stay up-to-date with the latest styles by exploring the featured products and new arrivals sections.
+
+- **Category-Specific Browsing**: Quickly find apparel by navigating directly to the men’s or women’s section for a more focused shopping experience.
+
+- **Detailed Product View**: Click on a product to see more details, including sizes, colors, price, and available stock.
+
+- **Add to Cart & Manage Selections**: Seamlessly add items to your cart and adjust quantities as needed, allowing for a smooth transition from browsing to checkout.
+
+- **Personalized Shopping Lists**: Use the cart to temporarily save items you’re considering, enabling an organized and convenient decision-making process.
+
+- **Responsive Viewing Across Devices**: Enjoy a consistent browsing experience on any device, whether on mobile, tablet, or desktop.
+
+- **Discover Fashion Insights on the Blog**: Visit the blog section to read articles about fashion trends, styling tips, and more.
+
 
 ## Contact
 
@@ -80,3 +109,6 @@ Follow these instructions to set up the project on your local machine.
 
 - Thanks to all contributors and users for their support.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
