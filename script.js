@@ -100,9 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const navLinks = document.querySelectorAll('.nav-link');
                 navLinks.forEach(link => link.classList.remove('active'));
 
-                if (category === 'Men') {
+                if (category === 'men') {
                     document.querySelector('a[href="men.html"]').classList.add('active');
-                } else if (category === 'Women') {
+                } else if (category === 'women') {
                     document.querySelector('a[href="women.html"]').classList.add('active');
                 }
 
@@ -117,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (existingItemIndex > -1) {
                     quantityInput.value = cartItems[existingItemIndex].quantity; 
                     addToCartButton.innerText = 'Go to Cart'; 
+                    addToCartButton.style.backgroundColor = "#3f0737";
                     addToCartButton.onclick = function() {
                         window.location.href = 'cart.html'; 
                     };
@@ -144,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
                     addToCartButton.innerText = 'Go to Cart';
+                    addToCartButton.style.backgroundColor = "#3f0737";
                     addToCartButton.onclick = function () {
                         window.location.href = 'cart.html';
                     };
@@ -159,7 +161,7 @@ function displayCartItems() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const cartTableBody = document.getElementById('carttable').getElementsByTagName('tbody')[0];
     cartTableBody.innerHTML = '';    
-    console.log(cartItems)
+
     cartItems.forEach(item => {
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -167,7 +169,7 @@ function displayCartItems() {
             <td><img onclick="window.location.href='product.html?productId=${item.productId}&category=${item.category}';" style="cursor: pointer"; src="${item.imageSrc}" alt="${item.name}" /></td>
             <td>${item.name}</td>
             <td id="price">Rs. ${item.price}</td>
-            <td id="quantity"><input type="number" value="${item.quantity}" min="1"></td>
+            <td id="quantity"><button style="border: 0.5px solid black; background-color: transparent; width: 50px;">${item.quantity}</button></td>
             <td id="subtot">Rs. ${item.price * item.quantity}</td>
         `;
         cartTableBody.appendChild(row);
